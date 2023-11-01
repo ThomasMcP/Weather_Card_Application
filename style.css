@@ -89,4 +89,9 @@ form button img {
     margin-right: 10px;
  }
 
+ .humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+ }
+
 
