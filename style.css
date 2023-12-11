@@ -93,3 +93,17 @@ form button img {
     font-size: 28px;
     margin-top: -6px;
  }
+
+.displayWeather {
+    display: none;
+}
+
+.showError {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+ /* TO DO */
+ /* ADD COLOUR GRADIENTS BASED ON WEATHER  TO TOGGLE ON AND OFF*/
+

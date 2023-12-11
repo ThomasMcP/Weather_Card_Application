@@ -7,6 +7,10 @@ async function checkWeather(cityName) {
     const response = await fetch(apiUrl + `&appid=${apiKey}`);
     let data = await response.json();
 
+    if (data) {
+        document.querySelector('.error').classList.remove('showError');
+    }
+
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -14,6 +18,7 @@ async function checkWeather(cityName) {
 
 //    UPDATE IMAGE
     document.querySelector(".weather img").src = `images/${data.weather[0].main.toLowerCase()}.png`
+    document.querySelector('.weather').classList.remove('displayWeather');
 }
 
 checkWeather();
